@@ -1,46 +1,40 @@
 package com.company;
 
 
-
-public class Main {
-
-    public static void main(String[] args) {
-
-//        String color = "Красный";
-//        switch (color) {
-//            case "Красный":
-//                System.out.println();
-//                break;
-//
-//        }
-//
-//        int num = 10;
-//        int age = 20;
-//        if (num > 5 && age > 18) {
-//            System.out.println("Можешь выходить на улицу");
-//        }
-//
-//        if (num == 10 || age > 18) { //оператор или
-//            System.out.println("Success!");
-//        }
-        print();
-        printOurWord("Привет");
-        System.out.println("Сумма двух чисел: " + getSumOfValues(5,2));
-//        System.out.println("fhgijh: " + getSumOfValues(35,43));
-
-    }
-    public static void print(){
-        System.out.println("Hello world!");
-    }
+ public class Main{
+     public static void main(String[]args) {
 
 
-    public static void printOurWord(String word){
-        System.out.println("Ваше слово: " + word);
-        word = "Hello";
-    }
+         System.out.println(getValue(34,15));
+         System.out.println(getValue(25,1));
+         System.out.println(getValue(10,35));
+         System.out.println(getValue(57,-5));
+         System.out.println(getValue(123,-23));
 
-    public static int getSumOfValues(int num1, int num2){
-        return num1 + num2;
-    }
 
-}
+
+  }
+
+
+   public static String getValue (int age,int temperature) {
+       if (20<age && age<45 && 30>temperature && temperature>-20){
+               System.out.printf("age:" + age + "  temperature:" + temperature);
+           return ("  Можно идти гулять");
+       }
+       else if (age<20 && 28>temperature && temperature>0){
+           System.out.printf("age:" + age + "  temp:" + temperature);
+           return ("  Можно идти гулять");
+       }else if(age>45 && 25>temperature && temperature>-10){
+           System.out.printf("age:" + age + "  temp:" + temperature);
+           return ("  Можно идти гулять");
+       }else{
+           System.out.printf("age:" + age + "  temp:" + temperature);
+           return ("  Остовайтесь дома");
+       }
+
+
+
+   }
+
+ }
+
